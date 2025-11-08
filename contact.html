@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Sale - Send us a message or leave a review.">
+  <meta name="keywords" content="Sale, Online Shop, WhatsApp Order, Buy Products, Nigeria, Electronics, Gadgets, Accessories">
+  <meta property="og:title" content="Sale | Contact Us">
+  <meta property="og:description" content="Contact Sale, send a message, or leave a review.">
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
+  <meta property="og:url" content="https://yourdomain.com/contact.html">
+  <meta property="og:type" content="website">
+  <title>Sale | Contact Us</title>
+  <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Sale","url":"https://yourdomain.com/","logo":"https://yourdomain.com/og-image.jpg","contactPoint":{"@type":"ContactPoint","telephone":"+2348166770859","contactType":"customer service","areaServed":"NG"}}</script>
+</head>
+<body>
+  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" style="font-family:'Montserrat',Poppins,sans-serif; padding:0.75rem 0;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" style="font-size:1.5rem;">
+        <i class="fa-solid fa-bag-shopping fa-lg text-primary"></i>
+        <span style="font-weight:900; letter-spacing:1px; font-size:1.3rem;">Sale</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+        <form class="d-flex me-3" role="search" onsubmit="event.preventDefault(); window.location.href='products.html?q='+encodeURIComponent(this.elements.search.value)">
+          <input class="form-control me-2" type="search" name="search" placeholder="Search products..." aria-label="Search" style="border-radius:1.2rem; min-width:160px;">
+          <button class="btn btn-outline-primary" type="submit" style="border-radius:1.2rem;"><i class="fa fa-search"></i></button>
+        </form>
+        <nav class="navbar-nav ms-auto d-flex flex-row gap-3">
+          <a class="nav-link d-flex align-items-center gap-1" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a class="nav-link d-flex align-items-center gap-1" href="products.html"><i class="fa-solid fa-box"></i> Products</a>
+          <a class="nav-link d-flex align-items-center gap-1" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+          <a class="nav-link d-flex align-items-center gap-1" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+          <a class="nav-link whatsapp-link d-flex align-items-center gap-1" href="https://wa.me/2348166770859" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp text-success"></i></a>
+        </nav>
+      </div>
+      <!-- Offcanvas mobile menu -->
+      <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileMenuLabel"><i class="fa-solid fa-bag-shopping text-primary me-2"></i>Sale</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form class="d-flex mb-3" role="search" onsubmit="event.preventDefault(); window.location.href='products.html?q='+encodeURIComponent(this.elements.search.value)">
+            <input class="form-control me-2" type="search" name="search" placeholder="Search products..." aria-label="Search" style="border-radius:1.2rem; min-width:120px;">
+            <button class="btn btn-outline-primary" type="submit" style="border-radius:1.2rem;"><i class="fa fa-search"></i></button>
+          </form>
+          <nav class="navbar-nav flex-column gap-2">
+            <a class="nav-link d-flex align-items-center gap-2" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a class="nav-link d-flex align-items-center gap-2" href="products.html"><i class="fa-solid fa-box"></i> Products</a>
+            <a class="nav-link d-flex align-items-center gap-2" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+            <a class="nav-link d-flex align-items-center gap-2" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+            <a class="nav-link whatsapp-link d-flex align-items-center gap-2 justify-content-center" href="https://wa.me/2348166770859" target="_blank" title="WhatsApp" style="font-size:1.3rem; padding:0.5rem 0;">
+              <i class="fa-brands fa-whatsapp text-success"></i>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <button id="whatsappChat" aria-label="Chat on WhatsApp" style="position:fixed;bottom:96px;right:32px;z-index:9999;display:none;background:#25D366;color:#fff;border:none;border-radius:50%;width:56px;height:56px;box-shadow:0 2px 8px rgba(26,115,232,0.10);font-size:2rem;align-items:center;justify-content:center;">
+    <i class="fa-brands fa-whatsapp"></i>
+  </button>
+  <main>
+    <button id="backToTop" aria-label="Back to Top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:9999;" class="btn btn-primary rounded-circle">↑</button>
+    <section class="contact-section py-5" aria-label="Contact Us">
+      <div class="container">
+        <h2 class="mb-4 text-center" style="font-family:'Montserrat',sans-serif;font-weight:800;"><i class="fa-solid fa-envelope me-2 text-primary"></i>Contact Us</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card p-4 animate__animated animate__fadeInUp" style="border-radius:2rem; box-shadow:0 8px 32px rgba(26,115,232,0.10); background:linear-gradient(120deg, #f7fafc 0%, #e3f0ff 60%, #f7f8fa 100%); border:none;">
+              <form id="review-form" autocomplete="off" aria-label="Submit a Review" class="mb-4">
+                <div class="mb-3">
+                  <label for="reviewName" class="form-label" style="font-weight:600; color:#1a73e8;"><i class="fa-solid fa-user me-1"></i> Your Name</label>
+                  <input type="text" class="form-control rounded-pill px-4 py-2" id="reviewName" required maxlength="32" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                  <label for="reviewText" class="form-label" style="font-weight:600; color:#1a73e8;"><i class="fa-solid fa-comment me-1"></i> Your Review</label>
+                  <textarea class="form-control rounded-4 px-4 py-2" id="reviewText" rows="3" required maxlength="200" placeholder="Share your experience..."></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" style="font-weight:600; color:#1a73e8;"><i class="fa-solid fa-star me-1"></i> Rating</label>
+                  <div class="d-flex gap-2 align-items-center">
+                    <select class="form-select rounded-pill px-3" id="reviewRating" aria-label="Review Rating" style="max-width:120px;">
+                      <option value="5">★★★★★</option>
+                      <option value="4">★★★★</option>
+                      <option value="3">★★★</option>
+                      <option value="2">★★</option>
+                      <option value="1">★</option>
+                    </select>
+                    <span class="ms-2" style="color:#FFD700; font-size:1.3em;">★</span>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-gradient rounded-pill w-100 py-2" style="font-weight:700; font-size:1.1rem; background:linear-gradient(90deg,#1a73e8 0%,#00c851 100%); color:#fff; border:none;"><i class="fa-solid fa-paper-plane me-2"></i>Submit Review</button>
+              </form>
+              <div id="contact-reviews" class="mt-4">
+                <!-- Reviews will be loaded here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p><i class="fab fa-whatsapp text-success me-2"></i>Contact: <a href="https://wa.me/2348166770859" class="text-success" target="_blank" aria-label="Contact Sale on WhatsApp">WhatsApp</a></p>
+      <p>&copy; 2025 <span style="font-family:'Montserrat',sans-serif;font-weight:700;">Sale</span>. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Load reviews from localStorage
+    function loadReviews() {
+      const reviews = JSON.parse(localStorage.getItem('sale_reviews') || '[]');
+      const reviewsList = document.getElementById('reviews-list');
+      reviewsList.innerHTML = reviews.length ? reviews.map(r => `<blockquote class='blockquote mb-3'>${r.review}<footer class='blockquote-footer'>${r.name}</footer></blockquote>`).join('') : '<p class="text-muted">No reviews yet.</p>';
+    }
+    loadReviews();
+
+    // Handle form submit
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const review = document.getElementById('review').value.trim();
+      if (name && email && message && review) {
+        // Save review to localStorage
+        const reviews = JSON.parse(localStorage.getItem('sale_reviews') || '[]');
+        reviews.unshift({ name, review });
+        localStorage.setItem('sale_reviews', JSON.stringify(reviews));
+        document.getElementById('review-success').classList.remove('d-none');
+        document.getElementById('contactForm').reset();
+        loadReviews();
+        // Also update home page reviews if loaded
+        if (window.parent && window.parent.updateHomeReviews) window.parent.updateHomeReviews();
+      }
+    });
+
+    // Back to Top button functionality
+    const backToTopButton = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Back to Top button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    backToTop.onclick = () => window.scrollTo({top:0,behavior:'smooth'});
+    // Review form with toast and validation
+    const reviewForm = document.getElementById('review-form');
+    reviewForm.onsubmit = function(e) {
+      e.preventDefault();
+      const name = document.getElementById('reviewName').value.trim();
+      const review = document.getElementById('reviewText').value.trim();
+      const rating = parseInt(document.getElementById('reviewRating').value, 10);
+      if (!name || !review || review.length < 5) {
+        window.showToast('Please enter a valid name and review (min 5 characters).');
+        return;
+      }
+      const reviews = JSON.parse(localStorage.getItem('sale_reviews') || '[]');
+      reviews.unshift({ name, review, rating });
+      localStorage.setItem('sale_reviews', JSON.stringify(reviews));
+      window.showToast('Thank you for your review!');
+      loadContactReviews();
+      if (window.updateHomeReviews) window.updateHomeReviews();
+      if (window.updateAboutReviews) window.updateAboutReviews();
+      reviewForm.reset();
+    };
+    // Load reviews with stars
+    function loadContactReviews() {
+      const reviews = JSON.parse(localStorage.getItem('sale_reviews') || '[]');
+      const contactReviews = document.getElementById('contact-reviews');
+      contactReviews.innerHTML = reviews.length ? reviews.slice(0,8).map(r => `
+        <blockquote class='blockquote mb-3 p-3 bg-white rounded shadow-sm'>
+          <div class='review-stars' aria-label='${r.rating || 5} star rating'>${'<span style="color:#FFD700;font-size:1.2em;">★</span>'.repeat(r.rating||5)}</div>
+          ${r.review}<footer class='blockquote-footer mt-2'>${r.name}</footer>
+        </blockquote>
+      `).join('') : `<p class="text-muted">No reviews yet.</p>`;
+    }
+    loadContactReviews();
+    window.updateContactReviews = loadContactReviews;
+    // Toast for review submission
+    window.showToast = function(msg) {
+      let toast = document.createElement('div');
+      toast.className = 'toast-message';
+      toast.innerText = msg;
+      document.body.appendChild(toast);
+      setTimeout(()=>toast.remove(),3000);
+    }
+    // Remove dark mode toggle and styles
+    // WhatsApp floating chat button
+    const whatsappChat = document.getElementById('whatsappChat');
+    whatsappChat.style.display = 'flex';
+    whatsappChat.onclick = () => window.open('https://wa.me/2348166770859', '_blank');
+  </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+// This script is used by index.html and products.html to load products dynamically from products.json
+// WhatsApp order links are generated per product
+// ...existing code...

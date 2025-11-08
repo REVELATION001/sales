@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sale - Home of quality products. Contact us on WhatsApp to order.">
+  <meta name="keywords" content="Sale, Online Shop, WhatsApp Order, Buy Products, Nigeria, Electronics, Gadgets, Accessories">
+  <link rel="canonical" href="https://yourdomain.com/index.html">
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Sale | Home of Quality Products">
+  <meta property="og:description" content="Order quality products directly via WhatsApp. Fast, easy, and secure shopping experience.">
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
+  <meta property="og:url" content="https://yourdomain.com/index.html">
+  <meta property="og:type" content="website">
+  <title>Sale | Home</title>
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Add Swiper.js for classy slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- Animate.css for product fade-in -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="manifest" href="manifest.json">
+  <!-- Google Fonts: Montserrat & Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for modern icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- Structured Data: Organization & Website -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Sale",
+    "url": "https://yourdomain.com/",
+    "logo": "https://yourdomain.com/og-image.jpg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+2348166770859",
+      "contactType": "customer service",
+      "areaServed": "NG"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Sale",
+    "url": "https://yourdomain.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://yourdomain.com/products.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" style="font-family:'Montserrat',Poppins,sans-serif; padding:0.75rem 0;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" style="font-size:1.5rem;">
+        <i class="fa-solid fa-bag-shopping fa-lg text-primary"></i>
+        <span style="font-weight:900; letter-spacing:1px; font-size:1.3rem;">Sale</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+        <form class="d-flex me-3" role="search" onsubmit="event.preventDefault(); window.location.href='products.html?q='+encodeURIComponent(this.elements.search.value)">
+          <input class="form-control me-2" type="search" name="search" placeholder="Search products..." aria-label="Search" style="border-radius:1.2rem; min-width:160px;">
+          <button class="btn btn-outline-primary" type="submit" style="border-radius:1.2rem;"><i class="fa fa-search"></i></button>
+        </form>
+        <nav class="navbar-nav ms-auto d-flex flex-row gap-3">
+          <a class="nav-link d-flex align-items-center gap-1" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a class="nav-link d-flex align-items-center gap-1" href="products.html"><i class="fa-solid fa-box"></i> Products</a>
+          <a class="nav-link d-flex align-items-center gap-1" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+          <a class="nav-link d-flex align-items-center gap-1" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+          <a class="nav-link whatsapp-link d-flex align-items-center gap-1" href="https://wa.me/2348166770859" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp text-success"></i></a>
+        </nav>
+      </div>
+      <!-- Offcanvas mobile menu -->
+      <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileMenuLabel"><i class="fa-solid fa-bag-shopping text-primary me-2"></i>Sale</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form class="d-flex mb-3" role="search" onsubmit="event.preventDefault(); window.location.href='products.html?q='+encodeURIComponent(this.elements.search.value)">
+            <input class="form-control me-2" type="search" name="search" placeholder="Search products..." aria-label="Search" style="border-radius:1.2rem; min-width:120px;">
+            <button class="btn btn-outline-primary" type="submit" style="border-radius:1.2rem;"><i class="fa fa-search"></i></button>
+          </form>
+          <nav class="navbar-nav flex-column gap-2">
+            <a class="nav-link d-flex align-items-center gap-2" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a class="nav-link d-flex align-items-center gap-2" href="products.html"><i class="fa-solid fa-box"></i> Products</a>
+            <a class="nav-link d-flex align-items-center gap-2" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+            <a class="nav-link d-flex align-items-center gap-2" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+            <a class="nav-link whatsapp-link d-flex align-items-center gap-2 justify-content-center" href="https://wa.me/2348166770859" target="_blank" title="WhatsApp" style="font-size:1.3rem; padding:0.5rem 0;">
+              <i class="fa-brands fa-whatsapp text-success"></i>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <button id="whatsappChat" aria-label="Chat on WhatsApp" style="position:fixed;bottom:96px;right:32px;z-index:9999;display:none;background:#25D366;color:#fff;border:none;border-radius:50%;width:56px;height:56px;box-shadow:0 2px 8px rgba(26,115,232,0.10);font-size:2rem;align-items:center;justify-content:center;">
+    <i class="fa-brands fa-whatsapp"></i>
+  </button>
+  <style>
+    body, html {
+      font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+      background: #f7f8fa;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #1a2a3a;
+    }
+    .btn, .nav-link {
+      font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+      font-weight: 600;
+      border-radius: 1.2rem;
+      transition: box-shadow 0.2s, background 0.2s;
+    }
+    .btn:hover, .nav-link:hover {
+      box-shadow: 0 2px 8px rgba(26,115,232,0.10);
+      background: #e3f0ff;
+    }
+    .navbar-brand span {
+      font-family: 'Montserrat',sans-serif;
+      font-weight:700;
+    }
+    .review-stars span {
+      font-family: inherit;
+      font-size: 1.2em;
+      color: #FFD700;
+      margin-right: 2px;
+    }
+    /* Add gap between navbar and hero */
+    .gap-navbar-hero { height: 1.5rem; }
+    .hero {
+      background: linear-gradient(120deg, #f7fafc 0%, #e3f0ff 60%, #f7f8fa 100%);
+      color: #1a2a3a;
+      border-radius: 2rem;
+      position: relative;
+      box-shadow: 0 8px 32px rgba(26,115,232,0.10);
+      overflow: hidden;
+      padding: 2.5rem 0 2.5rem 0;
+      margin-bottom: 1.5rem;
+      width: 100%;
+      min-height: 220px;
+      height: 220px;
+      display: flex;
+      align-items: center;
+    }
+    .hero h1, .hero p, .hero a.btn {
+      color: #1a2a3a !important;
+    }
+    .hero > .container, .hero * {
+      position: relative;
+      z-index: 1;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
+      opacity: 0.08;
+      pointer-events: none;
+      border-radius: 2rem;
+      z-index: 0;
+    }
+    .hero .swiper-pagination { display: none !important; }
+    .hero .container {
+      width: 100%;
+      max-width: 100vw;
+      padding: 0 1rem;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        border-radius: 1rem;
+        padding: 1.2rem 0 1.2rem 0;
+        min-height: 140px;
+        height: auto;
+      }
+      .hero .container {
+        padding: 0 0.5rem;
+      }
+      .hero .swiper-slide h1 {
+        font-size: 1.2rem;
+      }
+      .hero .swiper-slide p {
+        font-size: 0.9rem;
+      }
+      .hero .btn-lg {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.2rem;
+      }
+    }
+    .hero .swiper-slide h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 0.7rem;
+      color: #1a2a3a;
+    }
+    .hero .swiper-slide p {
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: #2a3a4a;
+      margin-bottom: 0.7rem;
+    }
+    .hero .btn-lg {
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 2rem;
+      padding: 0.6rem 2rem;
+      box-shadow: 0 2px 8px rgba(26,115,232,0.10);
+    }
+    .classic-product-card {
+      box-shadow: 0 2px 16px rgba(26,115,232,0.10);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: none;
+      background: #fff;
+    }
+    .classic-product-card:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 6px 24px rgba(26,115,232,0.18);
+    }
+    .product-image-wrapper {
+      background: linear-gradient(120deg, #e3f0ff 60%, #f7f8fa 100%);
+      border-radius: 1.2rem 1.2rem 0 0;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-title {
+      color: #1a73e8;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+    .card-text {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .testimonials .blockquote {
+      background: #fff;
+      border-radius: 1.2rem;
+      box-shadow: 0 2px 16px rgba(26,115,232,0.10);
+      border: none;
+    }
+    .testimonials .blockquote-footer {
+      color: #1a73e8;
+      font-weight: 600;
+    }
+    .toast-message {
+      position: fixed;
+      bottom: 48px;
+      right: 32px;
+      background: #1a73e8;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 1.2rem;
+      font-weight: 700;
+      box-shadow: 0 2px 16px rgba(26,115,232,0.18);
+      z-index: 99999;
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+    footer {
+      background: #23272b;
+      color: #fff;
+      border-radius: 2rem 2rem 0 0;
+      box-shadow: 0 -2px 16px rgba(26,115,232,0.10);
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #00c851;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .featured-products h2, .testimonials h2 { font-size: 1.3rem; }
+      .navbar-brand span { font-size: 1rem; }
+      .classic-product-card { min-width: 140px; max-width: 180px; }
+    }
+  </style>
+  <div class="gap-navbar-hero"></div>
+  <main>
+    <button id="backToTop" aria-label="Back to Top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:9999;box-shadow:0 2px 8px rgba(26,115,232,0.10);" class="btn btn-primary rounded-circle">↑</button>
+    <section class="hero text-center py-5" aria-label="Hero Section">
+      <div class="container">
+        <!-- Removed shopping cart icon image -->
+        <div class="swiper hero-swiper mb-4" aria-roledescription="carousel" aria-label="Hero Slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h1><i class="fa-solid fa-bolt-lightning me-2"></i>Welcome to Sale</h1>
+              <p>Your trusted source for quality products. Order easily via WhatsApp!</p>
+              <a href="products.html" class="btn btn-light btn-lg mt-3 d-flex align-items-center justify-content-center gap-2 shadow-sm" aria-label="Shop Now - View Products"><i class="fa-solid fa-cart-shopping"></i> Shop Now</a>
+            </div>
+            <div class="swiper-slide">
+              <h1><i class="fa-solid fa-tags me-2"></i>Exclusive Deals</h1>
+              <p>Discover our latest products and offers. Fast WhatsApp ordering!</p>
+              <a href="products.html" class="btn btn-success btn-lg mt-3 d-flex align-items-center justify-content-center gap-2 shadow-sm" aria-label="View Exclusive Deals"><i class="fa-solid fa-fire"></i> View Deals</a>
+            </div>
+            <div class="swiper-slide">
+              <h1><i class="fa-solid fa-star me-2"></i>Trusted by Customers</h1>
+              <p>Read reviews and shop with confidence. Quality guaranteed!</p>
+              <a href="about.html" class="btn btn-primary btn-lg mt-3 d-flex align-items-center justify-content-center gap-2 shadow-sm" aria-label="Learn More About Us"><i class="fa-solid fa-users"></i> Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-products py-5" aria-label="Featured Products">
+      <div class="container">
+        <h2 class="mb-4 text-center"><i class="fa-solid fa-gem me-2 text-primary"></i>Featured Products</h2>
+        <div class="row" id="featured-products">
+          <!-- Products will be loaded here -->
+        </div>
+      </div>
+    </section>
+    <section class="testimonials py-5 bg-light" aria-label="Customer Reviews">
+      <div class="container">
+        <h2 class="mb-4 text-center"><i class="fa-solid fa-comment-dots me-2 text-primary"></i>Customer Reviews</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="swiper review-swiper" aria-roledescription="carousel" aria-label="Customer Reviews Slider">
+              <div class="swiper-wrapper" id="home-reviews">
+                <!-- Reviews will be loaded here as slides -->
+              </div>
+              <div class="swiper-pagination" aria-label="Review Slider Pagination"></div>
+              <div class="swiper-button-next" tabindex="0" aria-label="Next Review"></div>
+              <div class="swiper-button-prev" tabindex="0" aria-label="Previous Review"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p><i class="fab fa-whatsapp text-success me-2"></i>Contact: <a href="https://wa.me/2348166770859" class="text-success" target="_blank" aria-label="Contact Sale on WhatsApp">WhatsApp</a></p>
+      <p>&copy; 2025 <span style="font-family:'Montserrat',sans-serif;font-weight:700;">Sale</span>. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="products.js"></script>
+  <script>
+    // --- HARDCODED PRODUCT DATA WITH RANDOM ORDER ---
+    const allProducts = [
+      {
+        name: "Wireless Earbuds",
+        description: "High-quality sound, long battery life, Bluetooth 5.0.",
+        price: "₦8,500",
+        image: "https://images.unsplash.com/photo-1585386959984-a4155224ced4?auto=format&fit=crop&w=400&q=80", // wireless earbuds
+        orderCount: 187,
+        category: "electronics"
+      },
+      {
+        name: "Bluetooth Speaker",
+        description: "Portable, powerful sound, waterproof.",
+        price: "₦10,000",
+        image: "https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=400&q=80", // bluetooth speaker
+        orderCount: 162,
+        category: "electronics"
+      },
+      {
+        name: "Smart Watch",
+        description: "Notifications, fitness tracking, stylish design.",
+        price: "₦15,000",
+        image: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=400&q=80", // smart watch
+        orderCount: 154,
+        category: "electronics"
+      },
+      {
+        name: "Noise Cancelling Headphones",
+        description: "Immersive sound, comfortable fit, long battery.",
+        price: "₦18,000",
+        image: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80", // noise cancelling headphones
+        orderCount: 143,
+        category: "electronics"
+      },
+      {
+        name: "Smart Fitness Band",
+        description: "Track your health and fitness with style.",
+        price: "₦6,000",
+        image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80", // fitness band
+        orderCount: 139,
+        category: "gadgets"
+      },
+      {
+        name: "Mini Power Bank",
+        description: "Pocket-sized, 10,000mAh, fast charging.",
+        price: "₦7,500",
+        image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80", // power bank
+        orderCount: 132,
+        category: "gadgets"
+      },
+      {
+        name: "LED Ring Light",
+        description: "Adjustable brightness, perfect for selfies.",
+        price: "₦5,000",
+        image: "https://images.unsplash.com/photo-1512446733611-9099a758e63e?auto=format&fit=crop&w=400&q=80", // ring light
+        orderCount: 128,
+        category: "gadgets"
+      },
+      {
+        name: "VR Headset",
+        description: "Experience immersive virtual reality at home.",
+        price: "₦22,000",
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80", // vr headset
+        orderCount: 121,
+        category: "gadgets"
+      },
+      {
+        name: "USB-C Fast Charger",
+        description: "Quick charge your devices safely.",
+        price: "₦3,200",
+        image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80", // usb c charger
+        orderCount: 117,
+        category: "accessories"
+      },
+      {
+        name: "Phone Tripod Stand",
+        description: "Flexible, lightweight, perfect for vlogging.",
+        price: "₦2,800",
+        image: "https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=400&q=80", // phone tripod
+        orderCount: 109,
+        category: "accessories"
+      },
+      {
+        name: "Wireless Mouse",
+        description: "Ergonomic, silent click, long battery.",
+        price: "₦3,000",
+        image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80",
+        orderCount: 98,
+        category: "accessories"
+      },
+      {
+        name: "Magnetic Phone Holder",
+        description: "Strong grip, 360° rotation, easy install.",
+        price: "₦2,200",
+        image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+        orderCount: 91,
+        category: "accessories"
+      },
+      {
+        name: "Laptop Sleeve",
+        description: "Protective, stylish, fits up to 15.6'' laptops.",
+        price: "₦4,500",
+        image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
+        orderCount: 87,
+        category: "accessories"
+      }
+    ];
+    // --- END HARDCODED PRODUCT DATA ---
+
+    // Back to Top button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    backToTop.onclick = () => window.scrollTo({top:0,behavior:'smooth'});
+    // Swiper slider for hero section
+    const heroSwiper = new Swiper('.hero-swiper', {
+      loop: true,
+      autoplay: { delay: 3500, disableOnInteraction: false },
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      a11y: { enabled: true }
+    });
+    // Remove product filter mini nav bar
+    const productFilters = document.getElementById('product-filters');
+    if (productFilters) productFilters.remove();
+
+    // Only show top 10 products by orderCount
+    function renderProducts() {
+      const sorted = allProducts.slice().sort((a, b) => (b.orderCount || 0) - (a.orderCount || 0));
+      const filtered = sorted.slice(0, 10);
+      const container = document.getElementById('featured-products');
+      container.innerHTML = `
+        <div class="swiper product-swiper" aria-roledescription="carousel" aria-label="Product Slider">
+          <div class="swiper-wrapper">
+            ${filtered.map((product, i) => `
+              <div class="swiper-slide">
+                <div class="card h-100 classic-product-card animate__animated animate__fadeInUp animate__delay-${(i%5)+1}s" style="padding:0.5rem; border-radius:1.2rem; min-width:180px; max-width:220px; margin:0 auto;">
+                  <div class="product-image-wrapper d-flex align-items-center justify-content-center" style="background: linear-gradient(120deg, #e3f0ff 60%, #f7f8fa 100%); border-radius: 1.2rem 1.2rem 0 0; height: 120px;">
+                    <img src="${product.image}" loading="lazy" class="card-img-top" alt="${product.name} - Sale Product" style="width: 100px; height: 100px; object-fit: contain; border-radius: 0.6rem; box-shadow: 0 2px 8px rgba(26,115,232,0.10); background: #fff;">
+                  </div>
+                  <div class="card-body text-center p-2">
+                    <h5 class="card-title mb-1" style="font-size:0.95rem; font-weight:700; color:#1a73e8;">${product.name}</h5>
+                    <p class="card-text mb-1" style="color:#555; font-size:0.85rem;">${product.description}</p>
+                    <p class="card-text fw-bold mb-2" style="color:#00c851; font-size:0.95rem; font-weight:700;">${product.price}</p>
+                    <span style='font-size:0.8rem; color:#888;'>Orders: ${product.orderCount || 0}</span>
+                    <a href="https://wa.me/2348166770859?text=Hello,%20I%20want%20to%20order%20${encodeURIComponent(product.name)}" target="_blank" class="btn btn-success btn-sm px-2 mt-1" aria-label="Order ${product.name} via WhatsApp" style="font-weight:700; border-radius:1.2rem; font-size:0.85rem;">Order</a>
+                  </div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+          <div class="swiper-button-next" tabindex="0" aria-label="Next Product"></div>
+          <div class="swiper-button-prev" tabindex="0" aria-label="Previous Product"></div>
+        </div>
+      `;
+      // Initialize Swiper for product slideshow
+      new Swiper('.product-swiper', {
+        slidesPerView: 2,
+        spaceBetween: 16,
+        loop: true,
+        autoplay: { delay: 3000, disableOnInteraction: false },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        breakpoints: {
+          768: { slidesPerView: 4 },
+          1200: { slidesPerView: 5 }
+        },
+        a11y: { enabled: true }
+      });
+    }
+    // Initial render (top 10 products only)
+    const loading = document.getElementById('products-loading');
+    if (loading) loading.style.display = 'none';
+    const error = document.getElementById('products-error');
+    if (error) error.style.display = 'none';
+    renderProducts();
+    // Load customer reviews from localStorage as Swiper slides
+    function loadHomeReviews() {
+      const reviews = JSON.parse(localStorage.getItem('sale_reviews') || '[]');
+      const homeReviews = document.getElementById('home-reviews');
+      homeReviews.innerHTML = reviews.length ? reviews.slice(0,8).map(r => `
+        <div class='swiper-slide'>
+          <blockquote class='blockquote mb-3 p-3 bg-white rounded shadow-sm'>
+            <div class='review-stars' aria-label='${r.rating || 5} star rating'>${'<span style="color:#FFD700;font-size:1.2em;">★</span>'.repeat(r.rating||5)}</div>
+            ${r.review}<footer class='blockquote-footer mt-2'>${r.name}</footer>
+          </blockquote>
+        </div>
+      `).join('') : `<div class='swiper-slide'><p class="text-muted">No reviews yet.</p></div>`;
+      // Re-init Swiper for reviews
+      if (window.reviewSwiper) window.reviewSwiper.destroy(true, true);
+      window.reviewSwiper = new Swiper('.review-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 8,
+        loop: true,
+        autoplay: { delay: 3500, disableOnInteraction: false },
+        pagination: { el: '.review-swiper .swiper-pagination', clickable: true },
+        navigation: { nextEl: '.review-swiper .swiper-button-next', prevEl: '.review-swiper .swiper-button-prev' },
+        a11y: { enabled: true }
+      });
+    }
+    loadHomeReviews();
+    window.updateHomeReviews = loadHomeReviews;
+    // Toast for review submission
+    window.showToast = function(msg) {
+      let toast = document.createElement('div');
+      toast.className = 'toast-message';
+      toast.innerText = msg;
+      document.body.appendChild(toast);
+      setTimeout(()=>toast.remove(),3000);
+    }
+    // Remove dark mode toggle and styles
+    // WhatsApp floating chat button
+    const whatsappChat = document.getElementById('whatsappChat');
+    whatsappChat.style.display = 'flex';
+    whatsappChat.onclick = () => window.open('https://wa.me/2348166770859', '_blank');
+    // Smooth scroll for nav links
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        if(this.hash && document.querySelector(this.hash)) {
+          e.preventDefault();
+          document.querySelector(this.hash).scrollIntoView({behavior:'smooth'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>

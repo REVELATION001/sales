@@ -1,0 +1,19 @@
+{
+  "name": "Sale",
+  "short_name": "Sale",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1a73e8",
+  "theme_color": "#1a73e8",
+  "description": "Home of quality products. Order via WhatsApp.",
+  "icons": [
+    {      "src": "favicon.ico",
+      "sizes": "192x192",
+      "type": "image/x-icon"
+    },
+    {      "src": "favicon.ico",
+      "sizes": "512x512",
+      "type": "image/x-icon"
+    }
+  ]
+}
